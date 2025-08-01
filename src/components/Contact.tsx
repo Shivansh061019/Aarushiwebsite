@@ -358,20 +358,20 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
             {/* Legal */}
             <div>
               <h4 className="text-base md:text-lg font-semibold text-background mb-4 md:mb-6">
-                Legal
+                Connect with us
               </h4>
               <div className="space-y-3">
                 <a
                   href="#"
                   className="block text-muted hover:text-primary transition-smooth text-sm"
                 >
-                  Privacy Policy
+                  +917985238964
                 </a>
                 <a
                   href="#"
                   className="block text-muted hover:text-primary transition-smooth text-sm"
                 >
-                  Terms of Service
+                  barebecoming.in@gmail.com
                 </a>
                 <a
                   href="#"
