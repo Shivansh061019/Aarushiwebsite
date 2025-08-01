@@ -72,7 +72,7 @@ const Navigation = () => {
               onClick={() => scrollToSection("contact")}
               className="text-sm px-3 py-2"
             >
-              Book Call
+              Contact
             </Button>
             <Button
               variant="ghost"
