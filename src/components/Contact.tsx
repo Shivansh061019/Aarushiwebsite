@@ -279,8 +279,7 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 Bare Becoming
               </h3>
               <p className="text-muted leading-relaxed text-sm md:text-base">
-                Mental health coaching to help you become the version of
-                yourself who thrives in alignment.
+                Rooted in truth, guided by clarity, devoted to your becoming.
               </p>
             </div>
 
@@ -414,7 +413,11 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 rel="noopener noreferrer"
                 className="text-muted hover:text-primary transition-smooth"
               >
-                <MessageCircle className="w-4 md:w-5 h-4 md:h-5" />
+                <img
+                  src="/lovable-uploads/25a24f18-737d-4f2a-a0c5-ae943ee5ac8c.png"
+                  alt="WhatsApp"
+                  className="w-4 md:w-5 h-4 md:h-5"
+                />
               </a>
               <a
                 href="https://open.spotify.com/episode/33lzYkAt5SBuBh9OnUoJRA?si=agl2E1mCQeW1cyOKxMtHDQ"
@@ -422,7 +425,11 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 rel="noopener noreferrer"
                 className="text-muted hover:text-primary transition-smooth"
               >
-                <Music className="w-4 md:w-5 h-4 md:h-5" />
+                <img
+                  src="/lovable-uploads/c9b71dd3-92d0-4220-b0f1-f3af39451792.png"
+                  alt="Spotify"
+                  className="w-4 md:w-5 h-4 md:h-5"
+                />
               </a>
             </div>
           </div>
