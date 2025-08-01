@@ -385,19 +385,15 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
 
           {/* Bottom Section */}
           <div className="border-t border-muted-foreground/30 mt-8 md:mt-12 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted text-xs md:text-sm mb-4 md:mb-0">
-              © 2023 Bare Becoming. All rights reserved.
-            </p>
-
-            {/* Social Icons */}
-            <div className="flex gap-3 md:gap-4">
+            {/* Social Icons - above copyright on mobile */}
+            <div className="flex justify-center gap-4 md:gap-4 mb-4 md:mb-0 md:order-2">
               <a
                 href="https://www.instagram.com/barebecoming.in?igsh=c3h6MW9mMTFoOHpk&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted hover:text-primary transition-smooth"
               >
-                <Instagram className="w-4 md:w-5 h-4 md:h-5" />
+                <Instagram className="w-6 md:w-5 h-6 md:h-5" />
               </a>
               <a
                 href="https://www.linkedin.com/in/aarushi-khare-399a19207"
@@ -405,7 +401,7 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 rel="noopener noreferrer"
                 className="text-muted hover:text-primary transition-smooth"
               >
-                <Linkedin className="w-4 md:w-5 h-4 md:h-5" />
+                <Linkedin className="w-6 md:w-5 h-6 md:h-5" />
               </a>
               <a
                 href="https://chat.whatsapp.com/F6QVIlGqcvcJwT8jUssrZp?mode=ac_t"
@@ -416,7 +412,7 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 <img
                   src="/lovable-uploads/25a24f18-737d-4f2a-a0c5-ae943ee5ac8c.png"
                   alt="WhatsApp"
-                  className="w-4 md:w-5 h-4 md:h-5"
+                  className="w-6 md:w-5 h-6 md:h-5"
                 />
               </a>
               <a
@@ -428,10 +424,14 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 <img
                   src="/lovable-uploads/c9b71dd3-92d0-4220-b0f1-f3af39451792.png"
                   alt="Spotify"
-                  className="w-4 md:w-5 h-4 md:h-5"
+                  className="w-6 md:w-5 h-6 md:h-5"
                 />
               </a>
             </div>
+
+            <p className="text-muted text-xs md:text-sm text-center md:text-left md:order-1">
+              © 2023 Bare Becoming. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
