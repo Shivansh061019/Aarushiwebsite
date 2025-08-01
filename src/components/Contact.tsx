@@ -119,7 +119,7 @@ const Contact = () => {
     <>
       {/* Contact Modal */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-lg mx-4 sm:mx-auto w-[calc(100vw-2rem)] sm:w-full bg-background border border-border shadow-elegant backdrop-blur-sm">
+        <DialogContent className="max-w-lg mx-auto w-[calc(100vw-2rem)] sm:w-full bg-background border border-border shadow-elegant backdrop-blur-sm">
           <DialogHeader>
             <DialogTitle className="text-xl md:text-2xl font-bold text-primary text-center mb-4 font-kylie">
               Book Your Free Clarity Call
@@ -267,7 +267,8 @@ const Contact = () => {
                 Bare Becoming
               </h3>
               <p className="text-muted leading-relaxed text-sm md:text-base">
-                Rooted in truth, guided by clarity, devoted to your becoming.
+                Mental health coaching to help you become the version of
+                yourself who thrives in alignment.
               </p>
             </div>
 
