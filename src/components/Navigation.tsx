@@ -88,7 +88,7 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
               className="p-2"
             >
               {isMobileMenuOpen ? (
-                <X className="h-5 w-5" />
+                <X className="h-5 w-5 text-primary" />
               ) : (
                 <Menu className="h-5 w-5" />
               )}
@@ -98,44 +98,46 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border/20">
-            <div className="flex flex-col space-y-4 pt-4">
-              <button
-                onClick={() => {
-                  scrollToSection("hero");
-                  setIsMobileMenuOpen(false);
-                }}
-                className="text-left text-foreground hover:text-primary transition-smooth py-2"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => {
-                  scrollToSection("about");
-                  setIsMobileMenuOpen(false);
-                }}
-                className="text-left text-foreground hover:text-primary transition-smooth py-2"
-              >
-                About
-              </button>
-              <button
-                onClick={() => {
-                  scrollToSection("services");
-                  setIsMobileMenuOpen(false);
-                }}
-                className="text-left text-foreground hover:text-primary transition-smooth py-2"
-              >
-                Services
-              </button>
-              <button
-                onClick={() => {
-                  scrollToSection("testimonials");
-                  setIsMobileMenuOpen(false);
-                }}
-                className="text-left text-foreground hover:text-primary transition-smooth py-2"
-              >
-                Testimonials
-              </button>
+          <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md shadow-gentle border-t border-border/20 z-40">
+            <div className="container mx-auto px-4 sm:px-6 py-4">
+              <div className="flex flex-col space-y-4">
+                <button
+                  onClick={() => {
+                    scrollToSection("hero");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                >
+                  Home
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection("about");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                >
+                  About
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection("services");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                >
+                  Services
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection("testimonials");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                >
+                  Testimonials
+                </button>
+              </div>
             </div>
           </div>
         )}
