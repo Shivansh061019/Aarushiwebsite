@@ -16,13 +16,13 @@ const Hero = () => {
   };
 
   return (
-    <section 
-      id="hero" 
+    <section
+      id="hero"
       className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero"
     >
       {/* Advanced Mesh Gradient Background - Reduced for mobile */}
       <div className="absolute inset-0 bg-gradient-mesh opacity-20 md:opacity-40"></div>
-      
+
       {/* Floating Geometric Shapes - Reduced for mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="hidden md:block absolute top-20 left-10 w-32 h-32 morph-shape opacity-20 floating-element"></div>
@@ -40,54 +40,76 @@ const Hero = () => {
             style={{
               left: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 12}s`,
-              animationDuration: `${8 + Math.random() * 6}s`
+              animationDuration: `${8 + Math.random() * 6}s`,
             }}
           />
         ))}
       </div>
 
       {/* Background image with enhanced effects - Optimized for mobile */}
-      <div 
-        className={`absolute inset-0 opacity-10 md:opacity-15 transition-all duration-[2s] ${isLoaded ? 'md:scale-110 md:blur-[0.5px]' : 'scale-100'}`}
+      <div
+        className={`absolute inset-0 opacity-10 md:opacity-15 transition-all duration-[2s] ${
+          isLoaded ? "md:scale-110 md:blur-[0.5px]" : "scale-100"
+        }`}
         style={{
           backgroundImage: `url('/lovable-uploads/89b12470-47ec-409b-840a-7be12985a93f.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          willChange: 'auto',
-          mixBlendMode: 'soft-light'
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          willChange: "auto",
+          mixBlendMode: "soft-light",
         }}
       />
-      
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className={`mb-8 transition-all duration-700 ${isLoaded ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'}`}>
+          <div
+            className={`mb-8 transition-all duration-700 ${
+              isLoaded ? "animate-fade-in-up" : "opacity-0 translate-y-8"
+            }`}
+          >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight mb-6 font-kylie">
               <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent md:animate-gradient-shift text-glow">
                 Bare Becoming
               </span>
             </h1>
-            
+
             <div className="relative">
-              <h2 className={`text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-light text-muted-foreground leading-relaxed transition-all duration-700 delay-200 font-kylie ${isLoaded ? 'animate-slide-in-left' : 'opacity-0 -translate-x-8'}`}>
+              <h2
+                className={`text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-light text-muted-foreground leading-relaxed transition-all duration-700 delay-200 font-kylie ${
+                  isLoaded
+                    ? "animate-slide-in-left"
+                    : "opacity-0 -translate-x-8"
+                }`}
+              >
                 <span className="md:animate-typewriter overflow-hidden whitespace-nowrap border-r-2 border-primary md:animate-blink">
                   Let's get you becoming
                 </span>
               </h2>
             </div>
           </div>
-          
-          <div className={`mb-12 transition-all duration-700 delay-300 ${isLoaded ? 'animate-fade-in' : 'opacity-0'}`}>
+
+          <div
+            className={`mb-12 transition-all duration-700 delay-300 ${
+              isLoaded ? "animate-fade-in" : "opacity-0"
+            }`}
+          >
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-muted-foreground leading-relaxed max-w-4xl mx-auto font-light px-4">
-              Transformation doesn't happen in things our mind knows, 
-              <span className="text-primary font-medium"> it happens in becoming </span>
+              Transformation doesn't happen in things our mind knows,
+              <span className="text-primary font-medium">
+                {" "}
+                it happens in becoming{" "}
+              </span>
               the version who thrives in alignment.
             </p>
           </div>
-          
-          <div className={`transition-all duration-700 delay-500 ${isLoaded ? 'animate-zoom-in-rotate' : 'opacity-0 scale-75'}`}>
-            <Button 
+
+          <div
+            className={`transition-all duration-700 delay-500 ${
+              isLoaded ? "animate-fade-in" : "opacity-0"
+            }`}
+          >
+            <Button
               variant="primary"
               size="lg"
               onClick={() => scrollToSection("services")}
