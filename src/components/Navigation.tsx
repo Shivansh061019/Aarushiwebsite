@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const Navigation = () => {
+interface NavigationProps {
+  onBookCallClick?: () => void;
+}
+
+const Navigation = ({ onBookCallClick }: NavigationProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -59,8 +63,11 @@ const Navigation = () => {
             >
               Services
             </button>
-            <Button variant="hero" onClick={() => scrollToSection("contact")}>
-              Contact
+            <Button
+              variant="hero"
+              onClick={onBookCallClick || (() => scrollToSection("contact"))}
+            >
+              Book Call
             </Button>
           </div>
 
@@ -69,10 +76,10 @@ const Navigation = () => {
             <Button
               variant="hero"
               size="sm"
-              onClick={() => scrollToSection("contact")}
+              onClick={onBookCallClick || (() => scrollToSection("contact"))}
               className="text-sm px-3 py-2"
             >
-              Contact
+              Book Call
             </Button>
             <Button
               variant="ghost"

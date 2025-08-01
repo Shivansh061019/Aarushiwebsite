@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, forwardRef, useImperativeHandle } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,13 +8,21 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Instagram, Linkedin, CheckCircle } from "lucide-react";
-import WhatsAppLogo from "@/assets/whatsapp-logo.svg";
-import SpotifyLogo from "@/assets/spotify-logo.svg";
+import {
+  Instagram,
+  Linkedin,
+  CheckCircle,
+  MessageCircle,
+  Music,
+} from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
-const Contact = () => {
+export interface ContactRef {
+  openModal: () => void;
+}
+
+const Contact = forwardRef<ContactRef>((_, ref) => {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -24,6 +32,10 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+
+  useImperativeHandle(ref, () => ({
+    openModal: () => setIsOpen(true),
+  }));
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -402,11 +414,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="text-muted hover:text-primary transition-smooth"
               >
-                <img
-                  src={WhatsAppLogo}
-                  alt="WhatsApp"
-                  className="w-4 md:w-5 h-4 md:h-5"
-                />
+                <MessageCircle className="w-4 md:w-5 h-4 md:h-5" />
               </a>
               <a
                 href="https://open.spotify.com/episode/33lzYkAt5SBuBh9OnUoJRA?si=agl2E1mCQeW1cyOKxMtHDQ"
@@ -414,11 +422,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="text-muted hover:text-primary transition-smooth"
               >
-                <img
-                  src={SpotifyLogo}
-                  alt="Spotify"
-                  className="w-4 md:w-5 h-4 md:h-5"
-                />
+                <Music className="w-4 md:w-5 h-4 md:h-5" />
               </a>
             </div>
           </div>
@@ -426,6 +430,8 @@ const Contact = () => {
       </footer>
     </>
   );
-};
+});
+
+Contact.displayName = "Contact";
 
 export default Contact;
