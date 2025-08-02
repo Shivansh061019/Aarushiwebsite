@@ -139,7 +139,7 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
           </DialogHeader>
           {isSuccess ? (
             <div className="text-center py-8">
-              <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+              <CheckCircle className="w-16 h-16 mx-auto mb-4" color="#7f8c78" />
               <h3 className="text-xl font-bold text-foreground mb-2">Done!</h3>
               <p className="text-muted-foreground">
                 Your message has been sent successfully. Aarushi will get back
@@ -313,12 +313,6 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 >
                   Offerings
                 </a>
-                <a
-                  href="#contact"
-                  className="block text-muted hover:text-primary transition-smooth text-sm"
-                >
-                  Contact
-                </a>
               </div>
             </div>
 
@@ -373,12 +367,6 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 >
                   barebecoming.in@gmail.com
                 </a>
-                <a
-                  href="#"
-                  className="block text-muted hover:text-primary transition-smooth text-sm"
-                >
-                  Disclaimer
-                </a>
               </div>
             </div>
           </div>
@@ -404,7 +392,7 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
                 <Linkedin className="w-6 md:w-5 h-6 md:h-5" />
               </a>
               <a
-                href="https://chat.whatsapp.com/F6QVIlGqcvcJwT8jUssrZp?mode=ac_t"
+                href="https://wa.me/917985238964"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted hover:text-primary transition-smooth"

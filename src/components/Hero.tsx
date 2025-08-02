@@ -82,7 +82,7 @@ const Hero = () => {
                     : "opacity-0 -translate-x-8"
                 }`}
               >
-                <span className="md:animate-typewriter overflow-hidden whitespace-nowrap border-r-2 border-primary md:animate-blink">
+                <span className="overflow-hidden whitespace-nowrap ">
                   Let's get you becoming
                 </span>
               </h2>
