@@ -356,13 +356,13 @@ const Contact = forwardRef<ContactRef>((_, ref) => {
               </h4>
               <div className="space-y-3">
                 <a
-                  href="#"
+                  href="tel:+917985238964"
                   className="block text-muted hover:text-primary transition-smooth text-sm"
                 >
                   +917985238964
                 </a>
                 <a
-                  href="#"
+                  href="mailto:barebecoming.in@gmail.com"
                   className="block text-muted hover:text-primary transition-smooth text-sm"
                 >
                   barebecoming.in@gmail.com

@@ -86,9 +86,10 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2"
+              style={{ backgroundColor: "#7f8c78", color: "#fff" }}
             >
               {isMobileMenuOpen ? (
-                <X className="h-5 w-5 text-primary" />
+                <X className="h-5 w-5 text-black" />
               ) : (
                 <Menu className="h-5 w-5" />
               )}
@@ -98,7 +99,10 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md shadow-gentle border-t border-border/20 z-40">
+          <div
+            className="md:hidden absolute top-full left-0 right-0 backdrop-blur-md shadow-gentle border-t border-border/20 z-40"
+            style={{ backgroundColor: "#7f8c78" }}
+          >
             <div className="container mx-auto px-4 sm:px-6 py-4">
               <div className="flex flex-col space-y-4">
                 <button
