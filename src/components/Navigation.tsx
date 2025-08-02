@@ -89,7 +89,7 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
               style={{ backgroundColor: "#7f8c78", color: "#fff" }}
             >
               {isMobileMenuOpen ? (
-                <X className="h-5 w-5 text-black" />
+                <X className="h-5 w-5 text-white" />
               ) : (
                 <Menu className="h-5 w-5" />
               )}
@@ -100,7 +100,7 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div
-            className="md:hidden absolute top-full left-0 right-0 backdrop-blur-md shadow-gentle border-t border-border/20 z-40"
+            className="md:hidden absolute top-full left-0 right-0 backdrop-blur-md shadow-gentle border-t border-border/20 z-40 text-white"
             style={{ backgroundColor: "#7f8c78" }}
           >
             <div className="container mx-auto px-4 sm:px-6 py-4">
@@ -110,7 +110,7 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
                     scrollToSection("hero");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                  className="text-left text-white transition-smooth py-2"
                 >
                   Home
                 </button>
@@ -119,7 +119,7 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
                     scrollToSection("about");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                  className="text-left text-white transition-smooth py-2"
                 >
                   About
                 </button>
@@ -128,7 +128,7 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
                     scrollToSection("services");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                  className="text-left text-white transition-smooth py-2"
                 >
                   Services
                 </button>
@@ -137,7 +137,7 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
                     scrollToSection("testimonials");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="text-left text-foreground hover:text-primary transition-smooth py-2"
+                  className="text-left text-white transition-smooth py-2"
                 >
                   Testimonials
                 </button>
