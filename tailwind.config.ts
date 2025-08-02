@@ -62,7 +62,7 @@ export default {
       fontFamily: {
         sans: ["Montserrat", "system-ui", "-apple-system", "sans-serif"],
         kylie: ["Playfair Display", "serif"],
-        kugile: ["Cormorant Garamond", "serif"],
+        kugile: ["Kugile", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

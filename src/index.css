@@ -725,14 +725,22 @@ All colors MUST be HSL.
   }
 }
 
-/* Global heading styles with Kugile-style font */
+@font-face {
+  font-family: "Kugile";
+  src: url("/fonts/Kugile_Demo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global heading styles with Kugile font */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Kugile", "Cormorant Garamond", serif !important;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
