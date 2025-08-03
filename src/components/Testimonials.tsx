@@ -116,7 +116,7 @@ const Testimonials = () => {
           </div>
           <div>
             <div className="text-3xl md:text-4xl font-bold text-primary">
-              4+
+              5+
             </div>
             <div className="text-muted-foreground text-sm md:text-base mt-1">
               Years Experience
