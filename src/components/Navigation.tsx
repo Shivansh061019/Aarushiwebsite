@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Logo from "@/assets/header-logo.png";
 
 interface NavigationProps {
   onBookCallClick?: () => void;
@@ -36,12 +37,12 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
     >
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
-          <div
-            className="text-xl sm:text-2xl font-bold text-primary cursor-pointer font-kylie"
+          <img
+            src={Logo}
+            alt="Bare Becoming Logo"
+            className="h-8 sm:h-10 cursor-pointer"
             onClick={() => scrollToSection("hero")}
-          >
-            Bare Becoming
-          </div>
+          />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
