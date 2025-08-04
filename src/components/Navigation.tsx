@@ -40,7 +40,7 @@ const Navigation = ({ onBookCallClick }: NavigationProps) => {
           <img
             src={Logo}
             alt="Bare Becoming Logo"
-            className="h-8 sm:h-10 cursor-pointer"
+            className="h-12 sm:h-16 cursor-pointer"
             onClick={() => scrollToSection("hero")}
           />
 
