@@ -108,11 +108,7 @@ const About = () => {
       {/* Brand Logos Section */}
       <section className="py-8 bg-background">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center mb-6">
-            <h3 className="text-xl md:text-2xl font-bold text-primary mb-2 font-kylie">
-              Brands I've Worked With
-            </h3>
-          </div>
+          <div className="text-center mb-6"></div>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             <img
               src="/lovable-uploads/logo1.png"
@@ -127,6 +123,16 @@ const About = () => {
             <img
               src="/lovable-uploads/logo3.png"
               alt="IIT"
+              className="h-12 md:h-16 object-contain"
+            />
+            <img
+              src="/lovable-uploads/logo6.png"
+              alt="HOTM"
+              className="h-12 md:h-16 object-contain"
+            />
+            <img
+              src="/lovable-uploads/logo7.png"
+              alt="Tales Of Humankind"
               className="h-12 md:h-16 object-contain"
             />
             <img

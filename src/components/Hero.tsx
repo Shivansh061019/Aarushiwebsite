@@ -69,7 +69,7 @@ const Hero = () => {
             }`}
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight mb-6 font-kylie">
-              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent md:animate-gradient-shift text-glow">
+              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent md:animate-gradient-shift">
                 Bare Becoming
               </span>
             </h1>
